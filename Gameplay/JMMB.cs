@@ -6,9 +6,9 @@ using UnityEngine;
 namespace RPGM.Gameplay
 {
     /// <summary>
-    /// Main class for implementing NPC game objects.
+    /// Clone B of NPCController
     /// </summary>
-    public class NPCController : MonoBehaviour
+    public class JMMB : NPCController
     {
         public ConversationScript[] conversations;
 

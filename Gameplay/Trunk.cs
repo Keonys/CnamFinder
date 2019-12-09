@@ -12,6 +12,7 @@ namespace RPGM.Gameplay
     /// </summary>
     public class Trunk : InventoryItem
     {
-
+        public Sprite sprite;
+        public string name;
     }
 }

@@ -40,8 +40,10 @@ namespace RPGM.Gameplay
         public void OnTriggerEnter2D(Collider2D collider)
         {
             //MessageBar.Show($"You collected: {name} x {count}");
-            model.AddInventoryItem(this);
             //UserInterfaceAudio.OnCollect();
+            
+            //Implémentation de createItem, d'ItemFactory
+            model.AddInventoryItem(this);
             gameObject.SetActive(false);
         }
     }

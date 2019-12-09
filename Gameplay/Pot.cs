@@ -12,6 +12,7 @@ namespace RPGM.Gameplay
     /// </summary>
     public class Pot : InventoryItem
     {
-
+        public Sprite sprite;
+        public string name;
     }
 }
