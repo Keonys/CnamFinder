@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Tiles"
+    "\\Core",
+    "\\Gameplay",
+    "\\UI"
   ],
-  "SelectedNode": "\\Tiles",
+  "SelectedNode": "\\Gameplay\\ErrorLogger.cs",
   "PreviewInSolutionExplorer": false
 }

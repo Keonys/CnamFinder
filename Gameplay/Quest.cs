@@ -103,6 +103,16 @@ namespace RPGM.Gameplay
                     break;
             }
 
+            foreach (var i in cleanup)
+            {
+                if (i != null) Destroy(i);
+            }
+
+            foreach (var i in spawnOnQuestComplete)
+            {
+                var clone = GameObject.Instantiate(i);
+                clone.SetActive(true);
+            }
         }
 
         public bool IsQuestComplete()

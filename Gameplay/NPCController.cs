@@ -1,5 +1,6 @@
 using RPGM.Core;
 using RPGM.Gameplay;
+using RPGM.UI;
 using UnityEngine;
 
 namespace RPGM.Gameplay
@@ -41,6 +42,7 @@ namespace RPGM.Gameplay
             foreach (var i in activeQuest.requiredItems)
             {
                 model.RemoveInventoryItem(i.item, i.count);
+                MessageBar.Show($"Vous avez rendu son objet a {i.item.name} ! Bravo !");
             }
             activeQuest.RewardItemsToPlayer();
             activeQuest.OnFinishQuest();

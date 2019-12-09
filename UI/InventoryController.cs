@@ -41,7 +41,7 @@ namespace RPGM.UI
                 e.transform.parent = transform;
                 e.transform.localPosition = cursor;
                 e.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = model.GetInventorySprite(i);
-                e.transform.GetChild(1).GetComponent<TextMeshPro>().text = $"x {count}";
+                e.transform.GetChild(1).GetComponent<TextMeshPro>().text = model.GetInventoryName(i);
                 e.gameObject.SetActive(true);
                 cursor.y -= stepSize;
             }

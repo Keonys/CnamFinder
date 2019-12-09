@@ -43,6 +43,11 @@ namespace RPGM.Gameplay
             return c;
         }
 
+        public string GetInventoryName(string name)
+        {
+            return name;
+        }
+
         public void AddInventoryItem(InventoryItem item)
         {
             int c = 0;

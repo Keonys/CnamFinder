@@ -19,6 +19,8 @@ namespace RPGM.Events
                 quest.isStarted = true;
                 quest.OnStartQuest();
                 npc.StartQuest(quest);
+                npc.CompleteQuest(quest);
+                //quest.OnFinishQuest();
             }
         }
     }

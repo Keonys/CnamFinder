@@ -2,6 +2,9 @@ using RPGM.Core;
 using RPGM.Gameplay;
 using RPGM.UI;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 
 namespace RPGM.Gameplay
@@ -28,11 +31,17 @@ namespace RPGM.Gameplay
             GetComponent<SpriteRenderer>().sprite = sprite;
         }
 
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            Debug.Log("OnSceneLoaded: " + scene.name);
+            Debug.Log(mode);
+        }
+
         public void OnTriggerEnter2D(Collider2D collider)
         {
-            MessageBar.Show($"You collected: {name} x {count}");
+            //MessageBar.Show($"You collected: {name} x {count}");
             model.AddInventoryItem(this);
-            UserInterfaceAudio.OnCollect();
+            //UserInterfaceAudio.OnCollect();
             gameObject.SetActive(false);
         }
     }
