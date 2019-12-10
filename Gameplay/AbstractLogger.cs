@@ -18,17 +18,16 @@ namespace RPGM.Gameplay
 
         public void setNextLogger()
         {
-
+            //Chercher le prochain log à afficher
         }
 
-        public void logMessage()
-        {
-
-        }
+        public void logMessage() { }
 
         public bool isInError()
         {
-            return false;
+            //Vérifier si l'on souhaite afficher un simple message console, ou un message d'erreur
+
+            return inError;
         }
     }
 }

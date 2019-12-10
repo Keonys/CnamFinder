@@ -14,12 +14,13 @@ namespace RPGM.Gameplay
     {
         public new void setNextLogger()
         {
-            
+            //Chercher le prochain log à afficher
         }
 
         public new void logMessage()
         {
-            
+            Console.WriteLine("ERREUR");
+            Console.ReadLine();
         }
 
         public new bool isInError()
